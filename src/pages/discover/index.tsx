@@ -2,7 +2,7 @@ import React, { memo, useEffect } from 'react'
 
 import { discoverMenu } from "@/common/local-data"
 
-import request from "@/services/request"
+import xhr from "@/network"
 
 import { NavLink, Outlet, } from 'react-router-dom'
 
@@ -11,7 +11,7 @@ import { DiscoverWrapper, TopMenu } from "./style"
 const Discover = memo((props) => {
 
   useEffect(() => {
-    request({
+    xhr.get({
       url: "/banner"
     }).then((res: any) => {
       console.log(res)
