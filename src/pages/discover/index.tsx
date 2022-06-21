@@ -1,22 +1,13 @@
-import React, { memo, useEffect } from 'react'
+import React, { memo, } from 'react'
 
 import { discoverMenu } from "@/common/local-data"
 
-import xhr from "@/network"
 
 import { NavLink, Outlet, } from 'react-router-dom'
 
 import { DiscoverWrapper, TopMenu } from "./style"
 
 const Discover = memo((props) => {
-
-  useEffect(() => {
-    xhr.get({
-      url: "/banner"
-    }).then((res: any) => {
-      console.log(res)
-    })
-  })
 
   return (
     <DiscoverWrapper>

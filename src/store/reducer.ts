@@ -1,6 +1,6 @@
-import { combineReducers } from "redux"
+import { combineReducers } from "redux-immutable"
 
-import { reducer as recommendReducer} from "../pages/discover/children/recommend/store"
+import { reducer as recommendReducer} from "@/pages/discover/children/recommend/store"
 
 const cReducer = combineReducers({
   recommend: recommendReducer

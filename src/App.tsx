@@ -7,6 +7,7 @@ import store from './store'
 
 import HYAppHeader from "@/components/app-header";
 import HYAppFooter from "@/components/app-footer";
+import AppPlayerBar from "./pages/player/app-player-bar";
 
 export default memo(function App() {
   const element = useRoutes(routes)
@@ -15,6 +16,7 @@ export default memo(function App() {
       <HYAppHeader />
         {element}
       <HYAppFooter />
+      <AppPlayerBar />
     </Provider>    
   );
 })

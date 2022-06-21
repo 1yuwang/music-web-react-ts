@@ -28,7 +28,7 @@ const HYAppHeader = memo(() => {
     <HeaderWrapper>
       <div className='content wrap-v1'>
         <HeaderLeft>
-          <a href='#/' className='logo sprite_01'></a>
+          <a href='#/' className='logo sprite_01'>网易云音乐</a>
           <ul className='select-list'>
             {
               headerLinks.map((item, index: number) => {
